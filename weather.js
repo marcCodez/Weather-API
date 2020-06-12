@@ -9,6 +9,7 @@ class Weather {
     async getWeather() {
 
         // create response variable
+        // add metic units at the end of the url for conversion
         const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${this.city},${this.country}&APPID=${this.apiKey}&units=metric`);
         

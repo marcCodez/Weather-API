@@ -1,0 +1,1 @@
+A weather API project from Brad Traversy's course Modern JavaScript from the Beginning. Since the API used by Brad had been closed down, I used an alternate API from openweathermap.org. Check the project out!: https://marccodez.github.io/Weather-API/.
