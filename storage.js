@@ -9,17 +9,29 @@ class Storage {
 
     getLocationData() {
         // check if its null in local storage, set to default if so else set them
-        if(localStorage.getItem('city') === null){
-            this.city = this.defaultCity;
-        } else {
-            this.city = localStorage.getItem('city')
-        }
+        // if(localStorage.getItem('city') === null){
+        //     this.city = this.defaultCity;
+        // } else {
+        //     this.city = localStorage.getItem('city')
+        // }
         
-        if(localStorage.getItem('country') === null){
-            this.country = this.defaultCountry;
-        } else {
-            this.country = localStorage.getItem('country')
-        }
+        // if(localStorage.getItem('country') === null){
+        //     this.country = this.defaultCountry;
+        // } else {
+        //     this.country = localStorage.getItem('country')
+        // }
+
+        // Can rewrite it using ternary operator notation
+        // using assign = not strict equality
+        localStorage.getItem('city') === null
+        ? (this.city = this.defaultCity)
+        : (this.city = localStorage.getItem('city'));
+
+        localStorage.getItem('country') === null
+        ? (this.country = this.defaultCountry)
+        : (this.country = localStorage.getItem('country'));
+
+
 
         return {
             city: this.city,

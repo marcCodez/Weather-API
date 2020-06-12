@@ -12,7 +12,7 @@ const weather = new Weather(weatherLocation.city, weatherLocation.country);
 // Initialise/Instantiate UI
 const ui = new UI();
 
-// Get weather on DOM load
+// Get weather on DOM load - before clicking change location we want a default weather displayed
 document.addEventListener('DOMContentLoaded', getWeather);
 
 // Change Location event

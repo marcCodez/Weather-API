@@ -21,7 +21,7 @@ class UI {
         // For code 500 - light rain icon = "10d". See below a full list of codes
         //URL is http://openweathermap.org/img/wn/10d@2x.png
         this.icon.setAttribute('src',  `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`);
-        this.humidity.textContent = `Relative Humidity: ${weather.main.humidity}`;
+        this.humidity.textContent = `Relative Humidity: ${weather.main.humidity}%`;
         this.dewpoint.textContent = `Wind Direction: ${weather.wind.deg} degrees`;
         this.wind.textContent = `Wind Speed: ${weather.wind.speed} meters/sec`;
 

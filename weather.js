@@ -14,6 +14,8 @@ class Weather {
         
         // create
         const responseData = await response.json();
+
+        // can check the properties we are working with
          console.log(responseData);
 
         return responseData;
